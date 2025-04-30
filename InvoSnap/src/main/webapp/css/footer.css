@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+.main-body .footer {
+    background: linear-gradient(135deg, #1e40af, #2563eb);
+    color: #fff;
+    padding: 40px 24px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.main-body .footer .footer-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+
+.main-body .footer .footer-logo h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #bfdbfe;
+}
+
+.main-body .footer .footer-logo p {
+    font-size: 14px;
+    color: #e2e8f0;
+    max-width: 300px;
+}
+
+.main-body .footer .footer-links h4,
+.main-body .footer .footer-social h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #bfdbfe;
+}
+
+.main-body .footer .footer-links ul,
+.main-body .footer .footer-social ul {
+    list-style: none;
+}
+
+.main-body .footer .footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.main-body .footer .footer-links ul li a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main-body .footer .footer-links ul li a:hover {
+    color: #bfdbfe;
+    transform: translateX(5px);
+}
+
+.main-body .footer .footer-social ul {
+    display: flex;
+    gap: 16px;
+}
+
+.main-body .footer .footer-social ul li a {
+    color: #e2e8f0;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main-body .footer .footer-social ul li a:hover {
+    color: #bfdbfe;
+    transform: scale(1.2);
+}
+
+.main-body .footer .footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.main-body .footer .footer-bottom p {
+    font-size: 14px;
+    color: #e2e8f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-body .footer .footer-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .main-body .footer .footer-logo p {
+        margin: 0 auto;
+    }
+
+    .main-body .footer .footer-social ul {
+        justify-content: center;
+    }
+}
